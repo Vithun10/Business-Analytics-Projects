@@ -47,6 +47,40 @@ VERIS is designed around the people who actually operate a risk decisioning plat
 **Decision Support Teams** use the Decision Engine and Unified Risk Score as a consistent, explainable basis for policy discussions, removing ambiguity from "why was this declined" conversations.
 
 ---
+## Live Demonstration
+
+### Live Frontend
+
+https://veris-mu.vercel.app/
+
+### Live Backend API
+
+https://veris-backend-m8xv.onrender.com/
+
+### API Documentation
+
+https://veris-backend-m8xv.onrender.com/docs
+
+---
+
+### Deployment Note
+
+VERIS is publicly deployed using the free tiers of Vercel and Render for portfolio demonstration.
+
+The complete Machine Learning inference pipeline (Random Forest + XGBoost + Explainability) requires more memory than is available on Render's free 512 MB instance. As a result:
+
+- Dashboard
+- Analytics
+- Reports
+- Transaction APIs
+- User Interface
+- REST API Documentation
+
+are fully available online.
+
+The full CSV upload and end-to-end scoring workflow is demonstrated locally or on higher-memory infrastructure using the exact same codebase.
+
+This limitation is caused by cloud infrastructure constraints rather than application logic and does not affect the architecture or functionality of the project.
 
 ## Business Problem
 
@@ -262,6 +296,19 @@ The architecture demonstrated in VERIS generalizes beyond this specific implemen
 **AI Analyst** — An AI-assisted investigation layer that synthesizes transaction history, risk factors, and prior decisions into a natural-language summary, helping analysts move through cases faster without losing context.
 
 ---
+## Repository Highlights
+
+- Enterprise-style layered architecture
+- Service–Repository backend design
+- RESTful API architecture using FastAPI
+- React-based analytics dashboard
+- Explainable AI integration
+- Unified Risk Scoring Engine
+- Human Review Workflow
+- Audit Trail
+- Business Analytics Dashboards
+- Modular and extensible project structure
+
 
 ## Technology Stack
 
@@ -308,6 +355,23 @@ The architecture demonstrated in VERIS generalizes beyond this specific implemen
 | Reporting | Custom export templates |
 
 ---
+## Skills Demonstrated
+
+This project demonstrates practical experience in:
+
+- Business Analytics
+- Financial Risk Analytics
+- Fraud Detection
+- Decision Intelligence
+- Explainable AI
+- Machine Learning Integration
+- Enterprise Software Architecture
+- REST API Development
+- Dashboard Design
+- Data Engineering
+- Backend Development
+- Frontend Development
+- Deployment
 
 ## Folder Structure
 
@@ -408,6 +472,16 @@ The backend will be available at `http://localhost:8000` and the frontend at `ht
 
 ---
 
+## Known Limitations
+
+The current public deployment uses free cloud infrastructure.
+
+Because the ML inference pipeline loads multiple analytical models simultaneously, the complete CSV upload workflow exceeds the memory available on the free Render instance.
+
+This does not affect local execution or deployments on higher-memory infrastructure.
+
+Future production deployments can use Docker containers and larger cloud instances to remove this limitation.
+
 ## Future Roadmap
 
 - **Containerization** — Dockerize backend and frontend for consistent, portable deployment.
@@ -425,12 +499,13 @@ The backend will be available at `http://localhost:8000` and the frontend at `ht
 
 ## Project Status
 
-| Attribute | Value |
-|---|---|
-| Version | v1.0 Portfolio Release |
-| Status | Stable |
-| Current Focus | Portfolio Demonstration |
-| Future Direction | Enterprise Enhancements |
+| Attribute | Status |
+|------------|--------|
+| Version | Portfolio Release v1.0 |
+| Development | Complete |
+| Deployment | Live |
+| Architecture | Stable |
+| Future Enhancements | Planned |
 
 ---
 
@@ -446,3 +521,4 @@ VERIS was built as an exploration of how financial institutions translate fragme
 
 
 Pre-trained model artifacts are excluded from the repository due to GitHub size limits. They can be regenerated using the training scripts provided in scripts/.
+
