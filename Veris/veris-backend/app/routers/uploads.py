@@ -4,6 +4,7 @@ from fastapi import File
 from fastapi import Depends
 
 import pandas as pd
+import traceback
 
 from sqlalchemy.orm import Session
 
@@ -44,69 +45,46 @@ router = APIRouter()
 async def upload_csv(
     file: UploadFile = File(...),
     db: Session = Depends(get_db),
-    role=Depends(
-        require_role("upload")
-    )
+    role=Depends(require_role("upload"))
 ):
+    try:
+        df = pd.read_csv(file.file)
 
-    df = pd.read_csv(
-        file.file
-    )
+        validation = UploadValidationService().validate(df)
 
-    validation = (
-        UploadValidationService()
-        .validate(df)
-    )
+        if not validation["valid"]:
+            return validation
 
-    if not validation["valid"]:
+        batch = BatchService().create_batch(db, file.filename)
 
-        return validation
+        mapped_df = SchemaMappingService().transform(df)
 
-    batch = (
-        BatchService()
-        .create_batch(
-            db,
-            file.filename
-        )
-    )
+        scored_df = ScoringPipelineService().score(mapped_df)
 
-    mapped_df = (
-        SchemaMappingService()
-        .transform(df)
-    )
-
-    scored_df = (
-        ScoringPipelineService()
-        .score(mapped_df)
-    )
-
-    saved = (
-        PersistenceService()
-        .save_transactions(
+        saved = PersistenceService().save_transactions(
             db,
             scored_df
         )
-    )
 
-    BatchService().update_batch(
-        db=db,
-        batch_id=batch.id,
-        status="COMPLETED",
-        total_records=len(df),
-        processed_records=saved
-    )
+        BatchService().update_batch(
+            db=db,
+            batch_id=batch.id,
+            status="COMPLETED",
+            total_records=len(df),
+            processed_records=saved
+        )
 
-    return {
+        return {
+            "batch_id": batch.id,
+            "status": "COMPLETED",
+            "records_processed": saved
+        }
 
-        "batch_id":
-            batch.id,
-
-        "status":
-            "COMPLETED",
-
-        "records_processed":
-            saved
-    }
+    except Exception as e:
+        print("=" * 80)
+        traceback.print_exc()
+        print("=" * 80)
+        raise
 
 @router.get(
     "/uploads/{batch_id}/status"
