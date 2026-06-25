@@ -116,4 +116,12 @@ Business-Analytics-Projects/
 
 ---
 
-More projects will be added as the portfolio expands.
+## Portfolio Roadmap
+
+| Project | Status |
+|----------|--------|
+| VERIS – Unified Risk Intelligence Platform | Completed |
+| Trading System Analytics | In Progress |
+| Investment Portfolio Recommendation Engine | In Progress |
+
+Additional enterprise analytics projects will be added as the portfolio expands.
