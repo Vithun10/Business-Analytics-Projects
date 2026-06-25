@@ -1,6 +1,6 @@
 import joblib
 import pandas as pd
-
+from app.ml.model_loader import load_rf_model
 
 VERIS_FRAUD_FEATURES = [
 
@@ -26,13 +26,11 @@ class FraudEngine:
 
     def __init__(self):
 
-        self.rf_model = joblib.load(
-            "app/ml/artifacts/veris_fraud_rf.pkl"
-        )
+        self.rf_model = load_rf_model()
 
         self.xgb_model = joblib.load(
-            "app/ml/artifacts/veris_fraud_xgb.pkl"
-        )
+        "app/ml/artifacts/veris_fraud_xgb.pkl"
+)
 
     def score(
         self,
