@@ -1,127 +1,242 @@
 # Business Analytics Projects
 
-## Overview
-
-This repository is a collection of end-to-end Business Analytics projects focused on solving real-world business problems using data analytics, machine learning, decision intelligence, visualization, and enterprise software engineering.
-
-Each project demonstrates how analytical models can support business decision-making through interpretable insights, automated workflows, and interactive dashboards.
-
-The portfolio combines concepts from Business Analytics, Risk Analytics, Financial Analytics, Machine Learning, and Enterprise Application Development.
+> **Enterprise Business Analyst Portfolio**
+>
+> A curated collection of Business Analysis, FinTech, Decision Intelligence, Data Analytics, and Enterprise Solution Design projects demonstrating end-to-end business problem solving through structured analysis, process optimization, data visualization, and technical implementation.
 
 ---
 
-# Projects
+# Portfolio Overview
 
-## 1. VERIS – Unified Risk Intelligence Platform
+This repository showcases my flagship Business Analysis projects developed to demonstrate enterprise-level analytical thinking, requirements engineering, workflow optimization, and decision intelligence.
 
-**Status:** Completed
+Each project follows a structured Business Analysis lifecycle, from identifying business problems through solution design, documentation, process improvement, and analytical validation.
 
-Enterprise platform for intelligent transaction risk assessment using fraud detection, proxy credit scoring, unified risk scoring, explainable AI, review workflows, audit trails, reporting, and interactive analytics.
+The portfolio combines Business Analysis with modern analytics technologies including SQL, Python, Power BI, React, FastAPI, and Machine Learning where appropriate.
+
+---
+
+# Featured Projects
+
+## ⭐ Project A — Client Onboarding & KYC Workflow Optimization
+
+**Flagship Business Analysis Project**
+
+An end-to-end Business Analysis case study focused on redesigning the client onboarding journey for a financial institution.
 
 ### Highlights
 
-* Unified Risk Score (URS) framework combining multiple analytical models
-* Fraud Detection using Machine Learning
-* Proxy Credit Risk Assessment
-* Explainable AI using SHAP
-* Human Review Workflow
-* Interactive Analytics Dashboard
-* Decision Intelligence Pipeline
-* Enterprise REST APIs
-* React + FastAPI Architecture
+- Business Requirements Document (BRD)
+- Functional Requirements Document (FRD)
+- Stakeholder Analysis
+- Requirements Traceability Matrix (RTM)
+- User Stories
+- As-Is & To-Be Process Maps
+- SQL Analysis
+- Python Analytics
+- Mock Dataset
+- Power BI Dashboard
+
+Repository
+
+```text
+Client Onboarding & KYC Workflow Optimization/
+```
 
 ---
 
-## 2. Trading System Analytics
+## ⭐ VERIS — Unified Risk Intelligence Platform
 
-**Status:** Under Development
+Enterprise Decision Intelligence Platform
 
-A business analytics platform focused on trading performance, portfolio monitoring, market insights, and financial decision support.
+A production-oriented FinTech platform for intelligent transaction risk assessment, combining fraud detection, proxy credit scoring, explainable AI, unified risk scoring, review workflows, reporting, and interactive analytics.
 
-Planned modules include:
+### Highlights
 
-* Portfolio Analytics
-* Performance Dashboards
-* Risk Metrics
-* Market Trend Analysis
-* Strategy Evaluation
+- Unified Risk Score (URS)
+- Fraud Detection
+- Credit Risk Assessment
+- Explainable AI (SHAP)
+- FastAPI Backend
+- React Frontend
+- REST APIs
+- Interactive Dashboard
+- Enterprise Architecture
+
+Repository
+
+```text
+VERIS/
+```
 
 ---
 
-## 3. Investment Portfolio Recommendation Engine
+## ⭐ Project B — Payment Exception & Reconciliation Workflow Redesign
 
-**Status:** Under Development
+Enterprise Business Analysis Case Study
 
-A recommendation platform designed to assist investors in selecting diversified investment portfolios using analytical models and financial metrics.
+A Business Analysis engagement focused on redesigning payment reconciliation workflows, improving exception management, and standardizing operational processes.
 
-Planned modules include:
+### Highlights
 
-* Investor Profiling
-* Risk Appetite Assessment
-* Portfolio Recommendation
-* Investment Analytics
-* Performance Tracking
+- Business Requirements Document
+- Functional Requirements Document
+- Stakeholder Analysis
+- Requirements Traceability Matrix
+- As-Is & To-Be Workflow Design
+- Business Process Optimization
+- Reconciliation Workflow Redesign
+
+Repository
+
+```text
+Payment_Exception_Reconciliation_Redesign/
+```
 
 ---
 
 # Skills Demonstrated
 
-* Business Analytics
-* Financial Analytics
-* Decision Intelligence
-* Risk Analytics
-* Machine Learning
-* Explainable AI
-* Data Engineering
-* Dashboard Development
-* REST API Design
-* Enterprise System Design
-* Data Visualization
-* Business Intelligence
+### Business Analysis
 
----
+- Requirements Engineering
+- Stakeholder Analysis
+- Business Process Mapping
+- Business Process Reengineering
+- Functional Analysis
+- Requirements Traceability
+- User Stories
+- Documentation
 
-# Technologies
+### Analytics
 
-### Backend
+- SQL
+- Python
+- Power BI
+- Excel
+- Data Analysis
+- Dashboard Development
 
-* Python
-* FastAPI
-* SQLAlchemy
-* SQLite
+### Decision Intelligence
 
-### Machine Learning
+- Risk Analytics
+- Financial Analytics
+- Fraud Detection
+- Explainable AI
+- Machine Learning
 
-* Scikit-learn
-* XGBoost
-* Random Forest
-* SHAP
+### Software & Platform Development
 
-### Frontend
-
-* React
-* TypeScript
-* Tailwind CSS
-* Recharts
+- React
+- TypeScript
+- FastAPI
+- REST APIs
+- SQLite
+- Enterprise System Design
 
 ---
 
 # Repository Structure
 
+```text
 Business-Analytics-Projects/
 
-* VERIS/
-* Trading-System/
-* Investment-Portfolio-Recommendation/
+│
+
+├── Client Onboarding & KYC Workflow Optimization/
+
+├── VERIS/
+
+├── Payment_Exception_Reconciliation_Redesign/
+
+└── README.md
+```
 
 ---
 
-## Portfolio Roadmap
+# Repository Navigation
 
-| Project | Status |
-|----------|--------|
-| VERIS – Unified Risk Intelligence Platform | Completed |
-| Trading System Analytics | In Progress |
-| Investment Portfolio Recommendation Engine | In Progress |
+Each project is self-contained and includes the complete documentation and supporting artifacts developed during the Business Analysis lifecycle.
 
-Additional enterprise analytics projects will be added as the portfolio expands.
+Depending on the project, repositories include:
+
+- Business Requirements
+- Functional Requirements
+- Stakeholder Analysis
+- Process Maps
+- Requirements Traceability Matrix
+- SQL Scripts
+- Python Analysis
+- Power BI Dashboards
+- Case Studies
+- Technical Documentation
+- Enterprise Architecture
+
+---
+
+# Technologies
+
+### Business Analysis
+
+- Requirements Engineering
+- BPM
+- Process Mapping
+- User Stories
+- RTM
+
+### Analytics
+
+- SQL
+- Python
+- Power BI
+- Excel
+
+### Machine Learning
+
+- Scikit-learn
+- XGBoost
+- SHAP
+
+### Backend
+
+- FastAPI
+- SQLAlchemy
+- SQLite
+
+### Frontend
+
+- React
+- TypeScript
+- Tailwind CSS
+
+---
+
+# Portfolio Website
+
+A dedicated portfolio website showcasing all projects is available here:
+
+**Portfolio**
+
+*(Link will be added after deployment.)*
+
+---
+
+# Connect With Me
+
+**TR Vithun**
+
+Business Analyst | FinTech | Decision Intelligence | Product Analytics
+
+**LinkedIn**
+
+https://www.linkedin.com/in/vithuntr/ 
+
+**Portfolio**
+
+*(Link to be added)*
+
+**GitHub**
+
+https://github.com/Vithun10
+
+---

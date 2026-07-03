@@ -30,6 +30,18 @@ VERIS is a risk intelligence platform that converts transaction-level fraud and 
 
 ---
 
+## Repository Navigation
+
+This repository is organized into the following major modules:
+
+- **veris-backend/** — FastAPI backend, risk engines, services, APIs, and machine learning pipeline.
+- **veris-frontend/** — React dashboard, analytics, review workflows, and reporting interface.
+- **docs/** — Product architecture, technical documentation, and design decisions.
+- **datasets/** — Training datasets and supporting data assets.
+- **scripts/** — Data preparation, model training, and validation utilities.
+
+Each module is independently documented while contributing to the overall VERIS platform.
+
 ## Who is VERIS for?
 
 VERIS is designed around the people who actually operate a risk decisioning platform day to day, not just the model that powers it.
@@ -427,18 +439,13 @@ Detailed endpoint-level documentation is intentionally excluded from this overvi
 
 > Screenshots will be added as the platform UI is finalized. Placeholders below indicate intended coverage.
 
-| Module | Screenshot |
-|---|---|
-| Dashboard | *placeholder* |
-| Transactions | *placeholder* |
-| Upload Center | *placeholder* |
-| Analytics | *placeholder* |
-| Research | *placeholder* |
-| Reports | *placeholder* |
-| Simulator | *placeholder* |
-| Audit | *placeholder* |
-| AI Analyst | *placeholder* |
-| Review Queue | *placeholder* |
+| Module | Preview |
+|---------|---------|
+| Dashboard | ![](screenshots/dashboard.png) |
+| Analytics | ![](screenshots/analytics.png) |
+| Reports | ![](screenshots/reports.png) |
+| Alerts | ![](screenshots/alerts.png) |
+| AI Analyst | ![](screenshots/ai-analyst.png) |
 
 ---
 
@@ -508,6 +515,38 @@ Future production deployments can use Docker containers and larger cloud instanc
 | Future Enhancements | Planned |
 
 ---
+
+## Related Portfolio
+
+Explore the complete Business Analyst Portfolio featuring:
+
+- Project A – Client Onboarding & KYC Workflow Optimization
+- VERIS – Unified Risk Intelligence Platform
+- Project B – Payment Exception & Reconciliation Workflow Redesign
+
+Portfolio Website
+
+(Portfolio link to be added after deployment.)
+
+---
+
+## Contact
+
+**TR Vithun**
+
+Business Analyst | FinTech | Decision Intelligence | Product Analytics
+
+GitHub
+
+https://github.com/Vithun10
+
+LinkedIn
+
+https://www.linkedin.com/in/vithuntr/ 
+
+Portfolio
+
+(To be added)
 
 ## License
 
