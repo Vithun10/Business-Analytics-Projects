@@ -18,7 +18,7 @@ The portfolio combines Business Analysis with modern analytics technologies incl
 
 # Featured Projects
 
-## ⭐ Project A — Client Onboarding & KYC Workflow Optimization
+## Client Onboarding & KYC Workflow Optimization
 
 **Flagship Business Analysis Project**
 
@@ -45,7 +45,7 @@ Client Onboarding & KYC Workflow Optimization/
 
 ---
 
-## ⭐ VERIS — Unified Risk Intelligence Platform
+##  VERIS — Unified Risk Intelligence Platform
 
 Enterprise Decision Intelligence Platform
 
@@ -71,7 +71,7 @@ VERIS/
 
 ---
 
-## ⭐ Project B — Payment Exception & Reconciliation Workflow Redesign
+## Payment Exception & Reconciliation Workflow Redesign
 
 Enterprise Business Analysis Case Study
 
@@ -217,7 +217,7 @@ A dedicated portfolio website showcasing all projects is available here:
 
 **Portfolio**
 
-*(Link will be added after deployment.)*
+https://vithun-tr.vercel.app/ 
 
 ---
 
@@ -233,7 +233,7 @@ https://www.linkedin.com/in/vithuntr/
 
 **Portfolio**
 
-*(Link to be added)*
+https://vithun-tr.vercel.app/ 
 
 **GitHub**
 
